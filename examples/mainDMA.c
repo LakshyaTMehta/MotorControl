@@ -105,9 +105,9 @@ void DMA_Start()
 }
 
 /*
-int pulse_count = 0;
-void TIM4_IRQHandler(){
-	pulse_count++;
+int pulse_count = 0;                                  // For debugging //
+void TIM4_IRQHandler(){                               // View pulse_count and dma_calls in live expressions to monitor the number of DMA requests and Timer 
+	pulse_count++;				      // update events
 	TIM4->SR &= ~(0x0001);
 }
 
